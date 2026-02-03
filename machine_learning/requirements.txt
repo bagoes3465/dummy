@@ -1,0 +1,35 @@
+# Core Deep Learning
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# CUDA (akan automatically installed dengan torch)
+# Pastikan NVIDIA CUDA Toolkit 12.1 sudah terinstall di system
+# Download dari: https://developer.nvidia.com/cuda-downloads
+
+# Data Processing & ML
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+opencv-python==4.8.0.74
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+tensorboard==2.13.0
+
+# Progress & Utilities
+tqdm==4.66.1
+Pillow==10.0.0
+python-dotenv==1.0.0
+
+# Inference & Model Management
+onnx==1.14.0
+onnxruntime==1.16.0
+
+# Optional: Model optimization
+# onnxruntime-gpu==1.16.0  # Uncomment for GPU inference optimization
+
+# Development
+jupyter==1.0.0
+ipython==8.14.0

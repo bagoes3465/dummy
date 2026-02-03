@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+
+roboflow:
+  workspace: fer-sd6zy
+  project: face-expressions-bxnqv
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fer-sd6zy/face-expressions-bxnqv/dataset/3
