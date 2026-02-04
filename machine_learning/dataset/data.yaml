@@ -2,12 +2,12 @@ train: ../train/images
 val: ../valid/images
 test: ../test/images
 
-nc: 7
-names: ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+nc: 5
+names: ['angry', 'happy', 'netural', 'sad', 'surprise']
 
 roboflow:
-  workspace: fer-sd6zy
-  project: face-expressions-bxnqv
-  version: 3
+  workspace: school-hjxnd
+  project: face-expressions-2
+  version: 4
   license: CC BY 4.0
-  url: https://universe.roboflow.com/fer-sd6zy/face-expressions-bxnqv/dataset/3
+  url: https://universe.roboflow.com/school-hjxnd/face-expressions-2/dataset/4

@@ -1,8 +1,8 @@
 
-face-expressions - v3 2024-06-30 1:34pm
+Face Expressions 2 - v4 2024-05-03 11:07pm
 ==============================
 
-This dataset was exported via roboflow.com on February 3, 2026 at 3:55 AM GMT
+This dataset was exported via roboflow.com on December 14, 2024 at 8:50 AM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,15 +17,15 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 8157 images.
-Expressions are annotated in YOLOv11 format.
+The dataset includes 1489 images.
+Angry-happy-sad-surprise-11sp are annotated in YOLOv11 format.
 
 The following pre-processing was applied to each image:
-* Resize to 640x640 (Stretch)
-* Grayscale (CRT phosphor)
+* Auto-orientation of pixel data (with EXIF-orientation stripping)
+* Resize to 400x400 (Stretch)
 
 The following augmentation was applied to create 3 versions of each source image:
-* 50% probability of horizontal flip
 * Random rotation of between -15 and +15 degrees
+* Random shear of between -10° to +10° horizontally and -10° to +10° vertically
 
 
