@@ -1,0 +1,45 @@
+/* ─── Button Component ────────────────────────── */
+.pb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.pb-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pb-btn-primary {
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+.pb-btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+.pb-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+.pb-btn-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pb-btn-icon {
+  width: 20px;
+  height: 20px;
+}

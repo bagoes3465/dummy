@@ -1,0 +1,44 @@
+/* ─── Error Page ──────────────────────────────── */
+.pb-error-page { }
+
+.pb-error-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.pb-error-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 400px;
+}
+
+.pb-error-icon {
+  font-size: 72px;
+  filter: drop-shadow(0 4px 12px rgba(239, 68, 68, 0.4));
+}
+
+.pb-error-center h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.pb-error-msg {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.pb-error-detail {
+  font-size: 13px;
+  opacity: 0.6;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  word-break: break-word;
+}

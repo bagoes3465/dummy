@@ -1,0 +1,96 @@
+/* ─── Processing Page ─────────────────────────── */
+.pb-processing {
+  background: transparent;
+}
+
+.pb-processing-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.pb-processing-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+}
+
+/* Loading Animation */
+.pb-loading-animation {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pb-pulse-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(99, 102, 241, 0.3);
+  animation: ripple 2s ease-out infinite;
+}
+.pb-pulse-ring:nth-child(1) { width: 80px; height: 80px; animation-delay: 0s; }
+.pb-pulse-ring:nth-child(2) { width: 100px; height: 100px; animation-delay: 0.4s; }
+.pb-pulse-ring:nth-child(3) { width: 120px; height: 120px; animation-delay: 0.8s; }
+
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.pb-pulse-center {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.5);
+  z-index: 1;
+}
+
+.pb-processing-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pb-processing-status {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Progress bar */
+.pb-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pb-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--purple), var(--blue), var(--green));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.pb-progress-text {
+  font-size: 24px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-processing-note {
+  font-size: 13px;
+  opacity: 0.6;
+}
